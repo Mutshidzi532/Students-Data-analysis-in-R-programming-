@@ -1,0 +1,97 @@
+#TASK 1
+percy<-read.csv("C:/Users/Dell/Downloads/students_academic.csv")
+percy
+mutshidzi<-read.csv("C:/Users/Dell/Downloads/students.csv")
+mutshidzi
+#TASK2
+percy1_clean<- percy
+percy1_clean$`GPA range` <- substring(percy$"GPA.range", 3)
+percy1_clean$`Study mode` <- substring(percy$"Study.mode", 3)
+percy1_clean$Department <- substring(percy$"Department", 3)
+percy1_clean$`Residence status` <- substring(percy$"Residence.status", 3)
+percy1
+#TASK3
+#(a)
+df_complete<-merge(percy,mutshidzi)
+df_complete
+# b. (i)
+dim(df_complete)
+#(ii) if they do not have equal numbers of rows but they have equal numbers of colomn.
+#(iii)  colomn 2, because there was no match across the datasets.
+#(c)
+df_complete_cases<-df_complete[complete.cases(df_complete),]
+#TASK 4
+mutshidzi$Label<-paste(mutshidzi$Address,mutshidzi$Area)
+mutshidzi
+#TASK5
+df_thohoyandou<-subset(df_complete,Area=="Thohoyandou",select=c(Student.ID,GPA.range,FullAddress))
+df_thohoyandou
+#TASK6
+#(a)
+percysub<-sub(percy,select=c(Student.ID,Department,Mark))
+#(b)
+percy3<-percy[,-c(2,4)]
+percy3
+#Task7
+names(percy)[4]<-"Dept"
+percy
+#(b)
+names(percy)[c(3,5)]<-c("mode","recidency")
+percy
+#(c)
+names(percy)<-c("ID","GPA","studyMode","Dept","Residence","Mark")
+percy
+#TASK8
+#(a)
+sapply(percy,class)
+#(b)
+percy$StudyMode<-as.factor(percy$studyMode)
+percy$Residence<-as.factor(percy$Residence)
+percy
+#Task9
+#(a)
+percy$Adjusted_Mark<-percy$Mark*1.02
+#(b)
+percy$Mark_Ratio<-round(percy$Adjusted_Mark/100,2)
+#(c)
+percy$MeanScore<-apply(percy[,c("Mark","Adjusted_Mark")],1,mean)
+#TASK10
+#(a)
+percy$MarkLEVEL<-cut(percy$Mark,breaks=3,labels=c("Low","Medium","High"))
+#(b)
+percy$performance<-cut(percy$Mark,breaks=c(0,50,75,100),labels=c("Fail","pass","Excellent"))
+#TASK11
+#(a)
+levels(percy$Dept)
+#(b)
+levels(percy$Dept)<-c("compSci","Eng","Bio","Psych","Business","Mark")
+#(c)
+levels(percy$pass)<-c("pass","fail")
+#TASK12
+#(a)
+percy_high<-subset(percy,Mark>=80)
+#(b)
+percy_bio<-subset(percy,Department== "Bio"&& Residence=="on campus")
+#(c)
+percy_passed<-subset(percy,passed!="Fail")
+#TASK13
+#(a)
+sample_indices <- sample(1:nrow(percy_clean), size = 10, replace = FALSE)
+#(b)
+students_sorted <- percy_clean[order(-percy_clean$Mark), ]
+#TASK14
+gradeFeedback <- function(mark) {
+if (!is.numeric(mark)) {stop("Input must be a numeric value.") }
+if (mark < 40) { return("Needs significant improvement") }
+else if (mark >= 40 & mark < 50) {return("Needs improvement") }
+else if (mark >= 50 & mark < 60) {return("Adequate")} 
+else if (mark >= 60 & mark < 75) {return("Good")}
+else if (mark >= 75) {return("Excellent")}
+}
+#TASK15
+#1.Needs significant improvement
+#2.Needs improvement
+#3.Adequate
+#4.Good
+#5Excellent
+#6 Input must be a numeric value.

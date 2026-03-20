@@ -1,0 +1,51 @@
+Student ID,GPA range,Study mode,Department,Residence status,Pass,final_mark
+202001,3. 3.0-3.5,1. Full-time,1. Computer Science,1. On-campus,1,90
+202002,4. 3.5-4.0,2. Part-time,2. Engineering,2. Off-campus,1,77
+202003,2. 2.5-3.0,1. Full-time,3. Biology,1. On-campus,1,87
+202004,4. 3.5-4.0,1. Full-time,4. Psychology,2. Off-campus,1,62
+202005,3. 3.0-3.5,2. Part-time,5. Business,1. On-campus,1,63
+202006,,1. Full-time,6. Mathematics,2. Off-campus,1,59
+202007,2. 2.5-3.0,1. Full-time,1. Computer Science,1. On-campus,1,99
+202008,4. 3.5-4.0,2. Part-time,2. Engineering,2. Off-campus,1,54
+202009,3. 3.0-3.5,1. Full-time,3. Biology,1. On-campus,1,50
+202010,1. 2.0-2.5,1. Full-time,4. Psychology,1. On-campus,0,31
+202101,4. 3.5-4.0,1. Full-time,5. Business,2. Off-campus,1,60
+202102,,2. Part-time,1. Computer Science,1. On-campus,1,87
+202103,3. 3.0-3.5,1. Full-time,6. Mathematics,2. Off-campus,1,60
+202104,2. 2.5-3.0,1. Full-time,2. Engineering,1. On-campus,1,62
+202105,4. 3.5-4.0,2. Part-time,3. Biology,2. Off-campus,1,60
+202106,3. 3.0-3.5,1. Full-time,4. Psychology,1. On-campus,1,51
+202107,2. 2.5-3.0,1. Full-time,5. Business,1. On-campus,1,53
+202108,4. 3.5-4.0,2. Part-time,1. Computer Science,2. Off-campus,1,79
+202109,,1. Full-time,6. Mathematics,1. On-campus,0,25
+202110,3. 3.0-3.5,1. Full-time,2. Engineering,2. Off-campus,1,92
+202201,2. 2.5-3.0,1. Full-time,3. Biology,1. On-campus,1,50
+202202,4. 3.5-4.0,2. Part-time,4. Psychology,2. Off-campus,1,78
+202203,3. 3.0-3.5,1. Full-time,5. Business,1. On-campus,1,87
+202204,1. 2.0-2.5,1. Full-time,1. Computer Science,1. On-campus,0,30
+202205,,2. Part-time,6. Mathematics,2. Off-campus,0,28
+202206,4. 3.5-4.0,1. Full-time,2. Engineering,1. On-campus,1,100
+202207,3. 3.0-3.5,1. Full-time,3. Biology,2. Off-campus,1,55
+202208,2. 2.5-3.0,2. Part-time,4. Psychology,1. On-campus,1,99
+202209,4. 3.5-4.0,1. Full-time,5. Business,2. Off-campus,1,99
+202210,3. 3.0-3.5,1. Full-time,1. Computer Science,1. On-campus,1,59
+202301,2. 2.5-3.0,2. Part-time,6. Mathematics,2. Off-campus,0,13
+202302,4. 3.5-4.0,1. Full-time,2. Engineering,1. On-campus,1,57
+202303,,1. Full-time,3. Biology,2. Off-campus,0,23
+202304,3. 3.0-3.5,2. Part-time,4. Psychology,1. On-campus,1,60
+202305,2. 2.5-3.0,1. Full-time,5. Business,2. Off-campus,1,51
+202306,4. 3.5-4.0,1. Full-time,1. Computer Science,1. On-campus,1,94
+202307,3. 3.0-3.5,2. Part-time,6. Mathematics,2. Off-campus,1,60
+202308,1. 2.0-2.5,1. Full-time,2. Engineering,1. On-campus,0,39
+202309,4. 3.5-4.0,1. Full-time,3. Biology,2. Off-campus,1,83
+202310,,2. Part-time,4. Psychology,1. On-campus,0,0
+202401,3. 3.0-3.5,1. Full-time,5. Business,1. On-campus,1,99
+202402,2. 2.5-3.0,1. Full-time,1. Computer Science,2. Off-campus,1,81
+202403,4. 3.5-4.0,2. Part-time,6. Mathematics,1. On-campus,0,0
+202404,3. 3.0-3.5,1. Full-time,2. Engineering,2. Off-campus,1,56
+202405,2. 2.5-3.0,1. Full-time,3. Biology,1. On-campus,1,79
+202406,4. 3.5-4.0,2. Part-time,4. Psychology,2. Off-campus,0,12
+202407,,1. Full-time,5. Business,1. On-campus,0,31
+202408,3. 3.0-3.5,1. Full-time,1. Computer Science,2. Off-campus,1,64
+202409,2. 2.5-3.0,2. Part-time,6. Mathematics,1. On-campus,0,28
+202410,4. 3.5-4.0,1. Full-time,2. Engineering,2. Off-campus,1,92
